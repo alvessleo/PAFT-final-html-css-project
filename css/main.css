@@ -256,9 +256,77 @@ header .menu {
   transform: scaleX(0);
 }
 
+.region-section {
+  width: 100vw;
+  margin: -1.5em -5em 0 -5em;
+}
+.region-section .region-photos {
+  margin-top: 10em;
+  display: flex;
+  justify-content: center;
+}
+.region-section .region-photos img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 25%;
+}
+.region-section p {
+  background-color: #423836;
+  font-family: "Playfair Display";
+  color: rgb(255, 255, 255);
+  width: 50%;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 1.3em;
+  padding: 10px 0 10px 0;
+}
+
+.about-section {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-section h1 {
+  margin-top: 4em;
+  margin-bottom: 1em;
+  font-family: "Playfair Display";
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+.about-section .img-about {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1em;
+}
+.about-section h2 {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.about-section p {
+  margin-bottom: 1em;
+  max-width: 800px;
+  font-weight: 300;
+  text-align: center;
+}
+.about-section p:nth-of-type(2) {
+  margin-bottom: 6em;
+}
+
 @media only screen and (min-width: 450px) {
   .hero-section .check-availability {
     flex-wrap: nowrap;
+  }
+  .region-section {
+    margin: -1.5em -1.5em 0 -1.5em;
   }
 }
 @media only screen and (min-width: 680px) {
@@ -284,6 +352,9 @@ header .menu {
   }
   .best-rooms-section img {
     width: 100%;
+  }
+  .region-section {
+    margin: -1.5em -5em 0 -5em;
   }
 }
 @media only screen and (min-width: 920px) {

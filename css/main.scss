@@ -299,12 +299,85 @@ header{
     }
 }
 
+.region-section{
+    width: 100vw;
+    margin: -1.5em -5em 0 -5em;
+    .region-photos{
+        margin-top: 10em;
+        display: flex;
+        justify-content: center;
+        
+        img{
+            object-fit: cover;
+            width: 25%;
+        }
+    }
+
+    p{
+        background-color: $color-primary;
+        font-family: 'Playfair Display';
+        color: $color-white;
+        width: 50%;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        text-align: center;
+        font-size: 1.3em;
+        padding: 10px 0 10px 0;
+    }
+}
+
+.about-section{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        margin-top: 4em;
+        margin-bottom: 1em;
+        font-family: 'Playfair Display';
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .img-about{
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 1em;
+    }
+
+    h2{
+        font-family: 'Playfair Display';
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    p{
+        margin-bottom: 1em;
+        max-width: 800px;
+        font-weight: 300;
+        text-align: center;
+
+        &:nth-of-type(2){
+            margin-bottom: 6em;
+        }
+    }
+}
+
 // Media query
 @media only screen and (min-width: 450px){
     .hero-section{
         .check-availability{
             flex-wrap: nowrap;
         }
+    }
+
+    .region-section{
+        margin: -1.5em -1.5em 0 -1.5em;
     }
 }
 
@@ -340,6 +413,10 @@ header{
 
             
         }
+    }
+
+    .region-section{
+        margin: -1.5em -5em 0 -5em;
     }
 }
 
