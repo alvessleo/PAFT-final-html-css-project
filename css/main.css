@@ -502,15 +502,21 @@ footer .envelope-areas .area ul li:hover {
     border: none;
     color: rgb(255, 255, 255);
     padding: 8px 25px;
+    font-size: 1rem;
+    transition: 0.5s;
+  }
+  header .second-nav-part ul .btn-reservar:hover {
+    background-color: #100d0d;
+    cursor: pointer;
   }
   header .second-nav-part ul a {
     color: #000000;
     padding: 0.5em 1.5em;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   header .second-nav-part ul a:hover {
     background: none;
-    text-decoration: underline;
+    text-decoration: none;
   }
   header .second-nav-part ul a .icon-profile {
     width: 0.8em;
@@ -533,11 +539,41 @@ footer .envelope-areas .area ul li:hover {
   nav ul a {
     color: #000000;
     padding: 0.75em 3em 0.75em 0em;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    position: relative;
+    /*&:hover{
+        background: none;
+        text-decoration: underline;
+    }*/
   }
-  nav ul a:hover {
-    background: none;
-    text-decoration: underline;
+  nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    width: 50%;
+    height: 2px;
+    background-color: #423836;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 250ms ease-in;
+    margin-top: -5px;
+  }
+  nav ul a:hover::after {
+    transform: scaleX(1);
+  }
+  nav ul a.home::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    width: 50%;
+    height: 2px;
+    background-color: #423836;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 250ms ease-in;
+    margin-top: -5px;
   }
   .hero-section img {
     width: 100vw;
