@@ -87,20 +87,21 @@ header .menu {
 }
 
 .hero-section {
-  height: 100vh;
   min-height: 600px;
+  max-height: 100vh;
 }
 .hero-section img {
   margin: 2em 0em -1.5em -1.5em;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 75vh;
+  height: 100%;
   min-height: 600px;
   width: 100vw;
+  max-height: 75vh;
 }
 .hero-section .check-availability {
   display: flex;
-  background-color: #D9D9D9;
+  background-color: rgb(255, 255, 255);
   width: 100%;
   flex-wrap: wrap;
 }
@@ -113,6 +114,8 @@ header .menu {
   background-color: #D9D9D9;
   z-index: 999;
   height: 150px;
+  max-width: 250px;
+  margin: 0 auto;
 }
 .hero-section .check-availability .item:hover {
   cursor: pointer;
@@ -136,6 +139,7 @@ header .menu {
 
 .services-section {
   padding-bottom: 3em;
+  margin-top: 6em;
 }
 .services-section .typo-services {
   text-align: center;
@@ -258,7 +262,7 @@ header .menu {
 
 .region-section {
   width: 100vw;
-  margin: -1.5em -5em 0 -5em;
+  margin: -1.5em -5em 0 -1.5em;
 }
 .region-section .region-photos {
   margin-top: 10em;
@@ -269,6 +273,7 @@ header .menu {
   -o-object-fit: cover;
      object-fit: cover;
   width: 25%;
+  max-height: 700px;
 }
 .region-section p {
   background-color: #423836;
@@ -321,12 +326,69 @@ header .menu {
   margin-bottom: 6em;
 }
 
+.client-evaluation-section h1 {
+  text-align: center;
+  font-family: "Playfair Display";
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.client-evaluation-section .envelope-cards {
+  margin: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.client-evaluation-section .envelope-cards .card {
+  color: rgb(255, 255, 255);
+  background-color: #423836;
+  min-height: 350px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5em;
+  margin: 0 auto;
+}
+.client-evaluation-section .envelope-cards .card .stars {
+  margin-top: -20px;
+}
+.client-evaluation-section .envelope-cards .card p:nth-of-type(2) {
+  font-weight: 300;
+}
+.client-evaluation-section .envelope-cards .card .client-picture-name {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.client-evaluation-section .envelope-cards .card .client-picture-name img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60px;
+  margin-right: 1.3em;
+}
+.client-evaluation-section .envelope-cards .card .client-picture-name label {
+  align-self: center;
+}
+.client-evaluation-section .envelope-cards .tablet {
+  display: none;
+}
+.client-evaluation-section .envelope-cards .desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 450px) {
   .hero-section .check-availability {
     flex-wrap: nowrap;
   }
   .region-section {
     margin: -1.5em -1.5em 0 -1.5em;
+  }
+  .client-evaluation-section .envelope-cards .card .client-picture-name {
+    flex-direction: row;
+  }
+  .client-evaluation-section .envelope-cards .card .stars {
+    margin-top: -80px;
   }
 }
 @media only screen and (min-width: 680px) {
@@ -342,6 +404,10 @@ header .menu {
   }
   .hero-section .check-availability {
     flex-wrap: nowrap;
+    background-color: #D9D9D9;
+  }
+  .hero-section .check-availability .item {
+    max-width: none;
   }
   .hero-section .check-availability .item .day-month {
     display: block;
@@ -471,6 +537,9 @@ header .menu {
     display: block;
     max-height: 600px;
   }
+  .client-evaluation-section .envelope-cards .tablet {
+    display: flex;
+  }
 }
 @media only screen and (min-width: 1240px) {
   .best-rooms-section .best-rooms-typo {
@@ -480,6 +549,23 @@ header .menu {
     position: absolute;
     right: 10%;
     transform: translateY(-100%);
+  }
+  .client-evaluation-section .envelope-cards .mobile {
+    min-height: 200px;
+    max-height: 300px;
+    transform: translateY(10%);
+  }
+  .client-evaluation-section .envelope-cards .mobile .stars {
+    margin-top: -50px;
+  }
+  .client-evaluation-section .envelope-cards .desktop {
+    min-height: 200px;
+    max-height: 300px;
+    display: flex;
+    transform: translateY(10%);
+  }
+  .client-evaluation-section .envelope-cards .desktop .stars {
+    margin-top: -50px;
   }
 }
 @media only screen and (min-width: 1450px) {

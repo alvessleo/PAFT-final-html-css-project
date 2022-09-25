@@ -106,22 +106,24 @@ header{
 }
 
 .hero-section{
-    height: 100vh;
     min-height: 600px;
+    max-height: 100vh;
 
     img{
         margin: 2em 0em -1.5em -1.5em;
         object-fit: cover;
-        height: 75vh;
+        height: 100%;
         min-height: 600px;
         width: 100vw;
+        max-height: 75vh;
     }
 
     .check-availability{
         display: flex;
-        background-color: $color-grey;
+        background-color: $color-white;
         width: 100%;
         flex-wrap: wrap;
+
 
         .item{
             display: flex;
@@ -132,6 +134,8 @@ header{
             background-color: $color-grey;
             z-index: 999;
             height: 150px;
+            max-width: 250px;
+            margin: 0 auto;
 
             &:hover{
                 cursor: pointer;
@@ -162,6 +166,7 @@ header{
 
 .services-section{
     padding-bottom: 3em;
+    margin-top: 6em;
     .typo-services{
         text-align: center;
         h1{
@@ -301,7 +306,7 @@ header{
 
 .region-section{
     width: 100vw;
-    margin: -1.5em -5em 0 -5em;
+    margin: -1.5em -5em 0 -1.5em;
     .region-photos{
         margin-top: 10em;
         display: flex;
@@ -310,6 +315,7 @@ header{
         img{
             object-fit: cover;
             width: 25%;
+            max-height: 700px;
         }
     }
 
@@ -368,6 +374,68 @@ header{
     }
 }
 
+.client-evaluation-section{
+    h1{
+        text-align: center;
+        font-family: 'Playfair Display';
+        text-transform: uppercase;
+        font-weight: 400;
+
+    }
+
+    .envelope-cards{
+        margin: 1.5em;
+        display: flex;
+        flex-wrap: wrap;
+        .card{
+            color: $color-white;
+            background-color: $color-primary;
+            min-height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2.5em;
+            margin: 0 auto;
+
+            .stars{
+                margin-top: -20px;
+            }
+
+            p{
+                &:nth-of-type(2){
+                    font-weight: 300;
+                }
+            }
+
+            .client-picture-name{
+                display: flex;
+                flex-direction: column;
+                align-self: flex-start;
+                img{
+                    border-radius: 50%;
+                    object-fit: cover;
+                    width: 60px;
+                    margin-right: 1.3em;
+                }
+                label{
+                    align-self: center;
+                }
+            }
+
+        }
+
+        .tablet{
+            display: none;
+        }
+
+        .desktop{
+            display: none;
+        }
+    }
+}
+
 // Media query
 @media only screen and (min-width: 450px){
     .hero-section{
@@ -378,6 +446,20 @@ header{
 
     .region-section{
         margin: -1.5em -1.5em 0 -1.5em;
+    }
+
+    .client-evaluation-section{
+        .envelope-cards{
+            .card{
+                .client-picture-name{
+                    flex-direction: row;
+                }
+
+                .stars{
+                    margin-top: -80px;
+                }
+            }
+        }
     }
 }
 
@@ -397,7 +479,10 @@ header{
 
         .check-availability{
             flex-wrap: nowrap;
+            background-color: $color-grey;
             .item{
+                max-width: none;
+
                 .day-month{
                     display: block;
                 }
@@ -418,6 +503,7 @@ header{
     .region-section{
         margin: -1.5em -5em 0 -5em;
     }
+
 }
 
 @media only screen and (min-width: 920px){
@@ -566,6 +652,13 @@ header{
         }
     }     
     
+    .client-evaluation-section{
+        .envelope-cards{
+            .tablet{
+                display: flex;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1240px){
@@ -581,6 +674,31 @@ header{
         }
     } 
 
+    .client-evaluation-section{
+        .envelope-cards{
+            .mobile{
+                min-height: 200px;
+                max-height: 300px;
+                transform: translateY(10%);
+
+                .stars{
+                    margin-top: -50px;
+                }
+
+            }
+
+            .desktop{
+                min-height: 200px;
+                max-height: 300px;
+                display: flex;
+                transform: translateY(10%);
+
+                .stars{
+                    margin-top: -50px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1450px){
