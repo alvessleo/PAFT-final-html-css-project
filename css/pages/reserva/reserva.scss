@@ -105,11 +105,238 @@ header{
     }
 }
 
+.hero-section{
+    margin: 2em -1.5em 0 -1.5em;
+
+    width: 100vw;
+    height: 30vh;
+    min-height: 300px;
+
+    .background{
+        position: relative;
+
+        width: 100%;
+
+        height: 100%;
+
+        img{
+            filter: brightness(50%);
+            width: 100%;
+
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            z-index: -1;
+        }
+       
+        p{
+            margin: 0 auto;
+            text-align: center;
+            z-index: 99;
+            font-family: 'Playfair Display';
+            color: $color-white;
+            font-size: 2em;
+        }
+
+    }
+}
+
+.quartos-section{
+    .container-main{
+        max-width: 600px;
+        .envelope-filters{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $color-primary;
+
+            .filter{
+                background-color: $color-primary;
+                padding: 30px;
+                p{
+                    font-weight: 300;
+                    color: $color-white;
+                }
+            }
+        }
+
+        .processing{
+            .processing-bar{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 2em;
+                margin-bottom: 2em;
+
+                .first{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color-primary;
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                    width: 40px;
+                    height: 40px;
+                    color: $color-white;
+                    position: relative;
+
+                    &::after{
+                        content: 'Quartos';
+                        color: #000000;
+                        position: absolute;
+                        top: 0;
+                        transform: translateY(-25px);
+                    }
+                }
+
+                .second{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color-white;
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                    width: 36px;
+                    height: 36px;
+                    color: $color-black;
+                    border: 2px solid $color-grey;
+                    position: relative;
+
+                    &::after{
+                        content: 'Informações';
+                        color: #000000;
+                        position: absolute;
+                        top: 0;
+                        transform: translateY(-25px);
+                    }
+                }
+
+                .third{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color-white;
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                    width: 36px;
+                    height: 36px;
+                    color: $color-black;
+                    border: 2px solid $color-grey;
+                    position: relative;
+
+                    &::after{
+                        content: 'Pagamento';
+                        color: #000000;
+                        position: absolute;
+                        top: 0;
+                        transform: translateY(-25px);
+                        
+                    }
+                }
+
+                .line{
+                    height: 2px;
+                    width: 130px;
+                    background-color: $color-grey;
+                }
+            }
+        }
+
+        .container-quartos{
+            .envelope-quartos{
+                .quarto{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $color-primary;
+                    height: fit-content;
+                    margin-top: 1em;
+                    img{
+                        width: 100%;
+                        max-height: 200px;
+                        object-fit: cover;
+                    }
+                    .info{
+                        padding: 20px;
+                        color: $color-white;
+                        h1{
+                            font-family: 'Playfair Display';
+                            font-weight: 400;
+                            font-size: 2.4em;
+                        }
+
+                        p{
+                            font-weight: 300;
+
+                            &:nth-of-type(1){
+                                text-transform: uppercase;
+                                font-size: .7em;
+                                letter-spacing: 0.3em;
+                            }
+
+                            &:nth-of-type(2){
+                                margin-bottom: 1.5em;
+                            }
+
+                            &:nth-of-type(3){
+                                color: $color-grey;
+                                margin-bottom: 2em;
+                            }
+                        }
+
+                        a{
+                            color: $color-white;
+                            font-size: 1rem;
+                            position: relative;
+                            text-transform: uppercase;
+                            font-weight: 300;
+
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                width: 100%;
+                                height: 1px;
+                                background-color: $color-white;
+                                transform: scaleX(1);
+                                transform-origin: left;
+                                transition: transform 250ms ease-in;
+            
+                            }
+            
+                            &:hover::after{
+                                transform: scaleX(0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container-total{
+        background-color: $color-primary;
+        margin-top: 10px;
+        padding: 20px;
+        color: $color-white;
+        h1{
+            font-family: 'Playfair Display';
+            font-size: 2.3em;
+            font-weight: 400;
+
+        }
+    }
+}
+
+
 footer{
     background-color: $color-black;
     color: $color-white;
     width: 100vw;
-    margin: -1.5em -1.5em 0 -1.5em;
+    margin: 15em -1.5em 0 -1.5em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -156,13 +383,32 @@ footer{
 // Media Queries
 
 @media only screen and (min-width: 450px){
+    .quartos-section{
+        .container-main{
+            .envelope-filters{
+                flex-direction: row;
+                justify-content: space-between;
+    
+                .filter{
+                    p{
 
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 680px){
     body{
         margin: 1.5em 5em 0 5em;
         font-family: 'Poppins', sans-serif;
+    }
+
+    .hero-section{
+        img{
+            margin: -1.5em -4em 0 -5em;
+        }
     }
 
     footer{
@@ -272,20 +518,6 @@ footer{
 
                 &:hover::after{
                     transform: scaleX(1);
-                }
-
-                &.home::before{
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: 20%;
-                    width: 50%;
-                    height: 2px;
-                    background-color: $color-primary;
-                    transform: scaleX(1);
-                    transform-origin: left;
-                    transition: transform 250ms ease-in;
-                    margin-top: -5px;
                 }
                 
             }
