@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
+.cadastro-section {
+  display: flex;
+  max-width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.cadastro-section .logo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 1em;
+}
+.cadastro-section .background {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  display: none;
+}
+.cadastro-section .container-cadastro {
+  font-family: "Poppins";
+  margin: 0 auto;
+  padding: 2em;
+}
+.cadastro-section .container-cadastro h1 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 0.4em;
+}
+.cadastro-section .container-cadastro .descricao {
+  margin-bottom: 1em;
+  max-width: 350px;
+  font-size: 1.2em;
+}
+.cadastro-section .container-cadastro p input {
+  border: none;
+  border-bottom: 1px solid;
+  min-width: 300px;
+  margin-bottom: 1em;
+  padding: 3px;
+  font-size: 1em;
+}
+.cadastro-section .container-cadastro p:nth-of-type(4) {
+  margin-bottom: 1em;
+}
+.cadastro-section .container-cadastro button {
+  background-color: #423836;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 1.3em;
+  font-weight: 300;
+  padding: 5px 25px 5px 25px;
+  transition: 0.5s;
+}
+.cadastro-section .container-cadastro button:hover {
+  background-color: #191515;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 680px) {
+  .cadastro-section .background {
+    height: 100%;
+    display: flex;
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .cadastro-section .logo {
+    margin-left: 4rem;
+  }
+  .cadastro-section .background {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  .cadastro-section {
+    justify-content: flex-start;
+    align-items: left;
+  }
+  .cadastro-section .container-cadastro {
+    margin: 0;
+    margin-left: 5em;
+  }
+  .cadastro-section .logo {
+    margin-left: 8rem;
+  }
+}
+@media only screen and (min-width: 1450px) {
+  .cadastro-section .logo {
+    margin-left: 12rem;
+  }
+}/*# sourceMappingURL=cadastro.css.map */
