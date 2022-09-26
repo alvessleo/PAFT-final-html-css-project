@@ -23,10 +23,10 @@ body{
 
 
     .logo{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        margin-left: 1em;
+        margin: 0 auto;
+        display: flex;
+        align-self: center;
+        margin-bottom: 6em;
     }
 
     .background{
@@ -105,9 +105,6 @@ body{
 @media only screen and (min-width: 920px){
     .cadastro-section{
 
-        .logo{
-            margin-left: 4rem;
-        }
 
         .background{
             width: 50%;
@@ -125,17 +122,9 @@ body{
             margin-left: 5em;
         }
 
-        .logo{
-            margin-left: 8rem;
-        }
     }
 }
 
 @media only screen and (min-width: 1450px){
-    .cadastro-section{
-        .logo{
-            margin-left: 12rem;
-        }
-    }
     
 }
