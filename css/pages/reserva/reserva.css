@@ -108,7 +108,7 @@ header .menu {
   z-index: -1;
 }
 .hero-section .background p {
-  margin: 0 auto;
+  padding-top: 4em;
   text-align: center;
   z-index: 99;
   font-family: "Playfair Display";
@@ -124,6 +124,7 @@ header .menu {
   flex-direction: column;
   justify-content: space-between;
   background-color: #423836;
+  margin-top: 2em;
 }
 .quartos-section .container-main .envelope-filters .filter {
   background-color: #423836;
@@ -278,6 +279,10 @@ header .menu {
   font-family: "Playfair Display";
   font-size: 2.3em;
   font-weight: 400;
+  padding-bottom: 7em;
+}
+.quartos-section .container-total hr {
+  margin-bottom: 1em;
 }
 
 footer {
@@ -328,14 +333,24 @@ footer .envelope-areas .area ul li:hover {
 }
 @media only screen and (min-width: 680px) {
   body {
-    margin: 1.5em 5em 0 5em;
+    margin: 1.5em;
     font-family: "Poppins", sans-serif;
   }
   .hero-section img {
-    margin: -1.5em -4em 0 -5em;
+    margin: 0em 0em 0 0em;
+  }
+  .quartos-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .quartos-section .container-total {
+    margin-left: 20px;
+    max-height: 440px;
+    margin-top: 2em;
   }
   footer {
-    margin: -1.5em -5em 0 -5em;
+    margin: 4em 0em -1.5em -1.5em;
+    width: 100vw;
   }
   footer .envelope-areas {
     flex-direction: row;
@@ -426,6 +441,21 @@ footer .envelope-areas .area ul li:hover {
   }
   nav ul a:hover::after {
     transform: scaleX(1);
+  }
+  .quartos-section {
+    justify-content: center;
+  }
+  .quartos-section .container-main .processing {
+    padding-top: 20px;
+  }
+  .quartos-section .container-main .processing .processing-bar .line {
+    width: 170px;
+  }
+  .quartos-section .container-total {
+    margin-left: 20px;
+    width: 100%;
+    max-width: 350px;
+    max-height: 350px;
   }
 }
 @media only screen and (min-width: 1450px) {

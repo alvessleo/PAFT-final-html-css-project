@@ -130,7 +130,7 @@ header{
         }
        
         p{
-            margin: 0 auto;
+            padding-top: 4em;
             text-align: center;
             z-index: 99;
             font-family: 'Playfair Display';
@@ -149,6 +149,7 @@ header{
             flex-direction: column;
             justify-content: space-between;
             background-color: $color-primary;
+            margin-top: 2em;
 
             .filter{
                 background-color: $color-primary;
@@ -326,7 +327,11 @@ header{
             font-family: 'Playfair Display';
             font-size: 2.3em;
             font-weight: 400;
+            padding-bottom: 7em;
 
+        }
+        hr{
+            margin-bottom: 1em;
         }
     }
 }
@@ -401,18 +406,32 @@ footer{
 
 @media only screen and (min-width: 680px){
     body{
-        margin: 1.5em 5em 0 5em;
+        margin: 1.5em;
         font-family: 'Poppins', sans-serif;
     }
 
     .hero-section{
         img{
-            margin: -1.5em -4em 0 -5em;
+            margin: 0em 0em 0 0em;
+        }
+    }
+
+    .quartos-section{
+        display: flex;
+        justify-content: space-between;
+
+        .container-total{
+            margin-left: 20px;
+
+            max-height: 440px;
+            margin-top: 2em;
         }
     }
 
     footer{
-        margin: -1.5em -5em 0 -5em;
+        margin: 4em 0em -1.5em -1.5em;
+        width: 100vw;
+
         .envelope-areas{
             flex-direction: row;
         }
@@ -522,6 +541,30 @@ footer{
                 
             }
             
+        }
+    }
+
+    .quartos-section{
+        justify-content: center;
+
+        .container-main{
+            
+            .processing{
+                padding-top: 20px;
+                .processing-bar{
+
+                    .line{
+                        width: 170px;
+                    }
+                }
+            }
+            
+        }
+        .container-total{
+            margin-left: 20px;
+            width: 100%;
+            max-width: 350px;
+            max-height: 350px;
         }
     }
 }
