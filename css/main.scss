@@ -124,7 +124,6 @@ header{
         width: 100%;
         flex-wrap: wrap;
 
-
         .item{
             display: flex;
             flex-direction: column;
@@ -166,7 +165,7 @@ header{
 
 .services-section{
     padding-bottom: 3em;
-    margin-top: 6em;
+    margin-top: 25em;
     .typo-services{
         text-align: center;
         h1{
@@ -465,14 +464,12 @@ footer{
             }
     
             ul{
-                a{
-                    text-decoration: none;
-                }
     
                 li{
                     font-weight: 300;
                     transition: 0.5s;
                     list-style-type: none;
+                    color: $color-white;
     
                     &:hover{
                         cursor: pointer;
@@ -492,6 +489,10 @@ footer{
         .check-availability{
             flex-wrap: nowrap;
         }
+    }
+
+    .services-section{
+        margin-top: 6em;
     }
 
     .region-section{
