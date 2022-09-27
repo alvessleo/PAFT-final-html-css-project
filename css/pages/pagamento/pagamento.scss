@@ -243,6 +243,12 @@ header{
                         font-weight: 400;
                         font-size: 2em;
                         text-align: left;
+                        margin-bottom: .8em;
+                    }
+
+                    .dados{
+                        margin-bottom: 2.5em;
+                        
                     }
         
                     h2{
@@ -283,7 +289,61 @@ header{
                             }
                         }
                     }
+                    .info-cartao{
+                        a{
+
+                            button{
+                                background-color: $color-white;
+                                border: 2px solid $color-primary;
+                                color: $color-primary;
+                                font-size: 0.8em;
+                                padding: 7px 20px;
+                                transition: color 0.5s;
+                                transition: 0.5s;
+                                margin-top: 2em;
+                                margin-bottom: 2em;
+                                
+                                &:hover{
+                                    background-color: $color-primary;
+                                    cursor: pointer;
+                                    color: $color-white;
+                
+                                }
+                            }
+                        }
+
+                        p{
+                            &:first-child{
+                                margin-top: 1em;
+                            }
+                            input{
+                                border: none;
+                                border-bottom: 1px solid $color-black;
+                                width: 198px;
+                                padding-bottom: .5em;
+                                font-size: 1em;
+                                margin-bottom: 1em;
+        
+                                &[type="date"]{
+                                    background-color: $color-grey;
+                                    appearance: none;
+                                    -webkit-appearance: none;
+                                    color: $color-black;
+                                    font-family: "Poppins";
+                                    font-size: 15px;
+                                    border:1px solid #ecf0f1;
+                                    background:#ecf0f1;
+                                    padding: 4px 5px 4px 5px;
+                                    display: inline-block !important;
+                                    visibility: visible !important;
+                                    width: 185px;
+                                }
+                            }
+                        }
+                    }
                 }
+
+
                 
             }
         }
@@ -311,24 +371,7 @@ header{
             a{
                 margin: 0;
                 padding: 0;
-                .btn-finalizar{
-                    background-color: $color-white;
-                    border: 2px solid $color-primary;
-                    color: $color-primary;
-                    font-size: 1em;
-                    padding: 7px 20px;
-                    margin-top: 2em;
-                    margin-left: -20px;
-                    transition: color 0.5s;
-                    transition: 0.5s;
-    
-                    &:hover{
-                        background-color: $color-primary;
-                        cursor: pointer;
-                        color: $color-white;
-    
-                    }
-                }
+               
             }
             
         }

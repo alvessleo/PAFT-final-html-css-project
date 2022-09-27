@@ -203,6 +203,10 @@ header .menu {
   font-weight: 400;
   font-size: 2em;
   text-align: left;
+  margin-bottom: 0.8em;
+}
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos .dados {
+  margin-bottom: 2.5em;
 }
 .quartos-section .container-grid .processing .container-total-info .envelope-quartos h2 {
   font-family: "Playfair Display";
@@ -242,6 +246,48 @@ header .menu {
   font-size: 0.7em;
   letter-spacing: 0.3em;
 }
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos .info-cartao a button {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #423836;
+  color: #423836;
+  font-size: 0.8em;
+  padding: 7px 20px;
+  transition: color 0.5s;
+  transition: 0.5s;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos .info-cartao a button:hover {
+  background-color: #423836;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos .info-cartao p:first-child {
+  margin-top: 1em;
+}
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos .info-cartao p input {
+  border: none;
+  border-bottom: 1px solid #000000;
+  width: 198px;
+  padding-bottom: 0.5em;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos .info-cartao p input[type=date] {
+  background-color: #D9D9D9;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  color: #000000;
+  font-family: "Poppins";
+  font-size: 15px;
+  border: 1px solid #ecf0f1;
+  background: #ecf0f1;
+  padding: 4px 5px 4px 5px;
+  display: inline-block !important;
+  visibility: visible !important;
+  width: 185px;
+}
 .quartos-section .container-grid .container-total {
   background-color: #423836;
   margin-top: 10px;
@@ -263,22 +309,6 @@ header .menu {
 .quartos-section .container-grid .container-total a {
   margin: 0;
   padding: 0;
-}
-.quartos-section .container-grid .container-total a .btn-finalizar {
-  background-color: rgb(255, 255, 255);
-  border: 2px solid #423836;
-  color: #423836;
-  font-size: 1em;
-  padding: 7px 20px;
-  margin-top: 2em;
-  margin-left: -20px;
-  transition: color 0.5s;
-  transition: 0.5s;
-}
-.quartos-section .container-grid .container-total a .btn-finalizar:hover {
-  background-color: #423836;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
 }
 
 footer {
