@@ -223,7 +223,7 @@ header{
 
                 .line{
                     height: 2px;
-                    width: 130px;
+                    width: 100px;
                     background-color: $color-grey;
                     
                 }
@@ -292,7 +292,7 @@ header{
                         width: 198px;
                         padding-bottom: .5em;
                         font-size: 1em;
-                        margin-top: 1em;
+                        margin-bottom: 1em;
 
                         &[type="date"]{
                             background-color: $color-grey;
@@ -325,6 +325,10 @@ header{
                     &:last-child{
                         margin-bottom: 3em;
                     }
+
+                    select{
+                        margin-bottom: 1em;
+                    }
                 }
             }
         }
@@ -342,6 +346,25 @@ header{
             }
             hr{
                 margin-bottom: 1em;
+            }
+
+            .btn-finalizar{
+                background-color: $color-white;
+                border: 2px solid $color-primary;
+                color: $color-primary;
+                font-size: 1.3em;
+                padding: 7px 20px;
+                margin-top: 2em;
+                margin-left: -1em;
+                transition: color 0.5s;
+                transition: 0.5s;
+
+                &:hover{
+                    background-color: $color-primary;
+                    cursor: pointer;
+                    color: $color-white;
+
+                }
             }
         }
     }
@@ -401,6 +424,7 @@ footer{
 
 @media only screen and (min-width: 450px){
     .quartos-section{
+        
         .container-main{
             .envelope-filters{
                 flex-direction: row;
@@ -411,6 +435,22 @@ footer{
 
                     }
                 }
+            }
+        }
+
+        .container-total-info{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .envelope-quartos{
+                .quarto{
+                    max-width: 500px;
+                }
+            }
+            .container-total{
+                max-height: 350px;
+                margin-left: 20px;
+                margin-top: 3.6em;
             }
         }
     }
@@ -436,6 +476,10 @@ footer{
             .envelope-quartos{
                 display: flex;
                 flex-direction: column;
+
+                h1{
+                    text-align: left;
+                }
             }
         }
         .container-total{
@@ -578,12 +622,23 @@ footer{
             }
             
         }
-        .container-total{
-            margin-left: 20px;
-            width: 100%;
-            max-width: 350px;
-            max-height: 350px;
+        .container-total-info{
+            .envelope-quartos{
+                .quarto{
+                    img{
+                        width: 450px;
+                    }
+                }
+                
+            }
+            .container-total{
+                margin-left: 20px;
+                width: 100%;
+                max-width: 350px;
+                max-height: 350px;
+            }
         }
+        
     }
 }
 

@@ -190,7 +190,7 @@ header .menu {
 }
 .quartos-section .container-main .processing .processing-bar .line {
   height: 2px;
-  width: 130px;
+  width: 100px;
   background-color: #D9D9D9;
 }
 .quartos-section .container-main .processing .processing-bar .done {
@@ -247,7 +247,7 @@ header .menu {
   width: 198px;
   padding-bottom: 0.5em;
   font-size: 1em;
-  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .quartos-section .container-total-info .envelope-quartos form p input[type=date] {
   background-color: #D9D9D9;
@@ -278,6 +278,9 @@ header .menu {
 .quartos-section .container-total-info .envelope-quartos form p:last-child {
   margin-bottom: 3em;
 }
+.quartos-section .container-total-info .envelope-quartos form p select {
+  margin-bottom: 1em;
+}
 .quartos-section .container-total-info .container-total {
   background-color: #423836;
   margin-top: 10px;
@@ -292,6 +295,22 @@ header .menu {
 }
 .quartos-section .container-total-info .container-total hr {
   margin-bottom: 1em;
+}
+.quartos-section .container-total-info .container-total .btn-finalizar {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #423836;
+  color: #423836;
+  font-size: 1.3em;
+  padding: 7px 20px;
+  margin-top: 2em;
+  margin-left: -1em;
+  transition: color 0.5s;
+  transition: 0.5s;
+}
+.quartos-section .container-total-info .container-total .btn-finalizar:hover {
+  background-color: #423836;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
 }
 
 footer {
@@ -339,6 +358,19 @@ footer .envelope-areas .area ul li:hover {
     flex-direction: row;
     justify-content: space-between;
   }
+  .quartos-section .container-total-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .quartos-section .container-total-info .envelope-quartos .quarto {
+    max-width: 500px;
+  }
+  .quartos-section .container-total-info .container-total {
+    max-height: 350px;
+    margin-left: 20px;
+    margin-top: 3.6em;
+  }
 }
 @media only screen and (min-width: 680px) {
   body {
@@ -356,6 +388,9 @@ footer .envelope-areas .area ul li:hover {
   .quartos-section .container-total-info .envelope-quartos {
     display: flex;
     flex-direction: column;
+  }
+  .quartos-section .container-total-info .envelope-quartos h1 {
+    text-align: left;
   }
   .quartos-section .container-total {
     margin-left: 20px;
@@ -465,7 +500,10 @@ footer .envelope-areas .area ul li:hover {
   .quartos-section .container-main .processing .processing-bar .line {
     width: 170px;
   }
-  .quartos-section .container-total {
+  .quartos-section .container-total-info .envelope-quartos .quarto img {
+    width: 450px;
+  }
+  .quartos-section .container-total-info .container-total {
     margin-left: 20px;
     width: 100%;
     max-width: 350px;
