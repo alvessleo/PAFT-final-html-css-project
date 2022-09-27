@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="css/pages/pagamento/pagamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper-nav">
+        <header>  
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="home">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Quartos</a></li>
+                </ul>  
+            </nav>
+
+            <img class="logo" src="img/logo.svg" alt="logo">
+    
+            <div class="second-nav-part"> <ul>
+                <li><a href="#"><img class="icon-profile" src="img/icon-profile.svg" alt="icon-profile">Entrar</a></li>
+                <li><button class="btn-reservar">Reservar</button></li>
+            </ul></div>
+           
+            <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="black"/>
+            </svg>
+        </header>
+    </div>
+
+    <section class="hero-section">
+        <div class="background">
+            <img src="img/section3img.jpg" alt="background">
+            <p>Confirmação</p>
+
+        </div>
+    </section>
+    <section class="quartos-section">
+        <div class="container-grid">
+            <div class="processing">
+                <div class="processing-bar">
+                    <div class="first"><svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.75502 10.784L0.205017 5.98988C-0.0683389 5.70186 -0.0683389 5.23487 0.205017 4.94682L1.19494 3.90377C1.4683 3.61572 1.91154 3.61572 2.1849 3.90377L5.25 7.13326L11.8151 0.216014C12.0885 -0.0720048 12.5317 -0.0720048 12.8051 0.216014L13.795 1.25907C14.0683 1.54709 14.0683 2.01408 13.795 2.30213L5.74498 10.784C5.47159 11.072 5.02838 11.072 4.75502 10.784Z" fill="white"/>
+                        </svg>
+                        </div>
+                    <div class="line done"></div>
+                    <div class="second"><svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.75502 10.784L0.205017 5.98988C-0.0683389 5.70186 -0.0683389 5.23487 0.205017 4.94682L1.19494 3.90377C1.4683 3.61572 1.91154 3.61572 2.1849 3.90377L5.25 7.13326L11.8151 0.216014C12.0885 -0.0720048 12.5317 -0.0720048 12.8051 0.216014L13.795 1.25907C14.0683 1.54709 14.0683 2.01408 13.795 2.30213L5.74498 10.784C5.47159 11.072 5.02838 11.072 4.75502 10.784Z" fill="white"/>
+                        </svg></div>
+                    <div class="line"></div>
+                    <div class="third">3</div>
+                </div>
+                <div class="container-total-info">
+                    <div class="envelope-quartos">
+                        <h1>Seus dados</h1>
+                        <div class="dados">
+                            <p>Leonardo Alves</p>
+                            <p>Rua Castro, 800</p>
+                            <p>Brasileiro</p>
+                            <p>alvesleo2002@gmail.com</p>
+                            <p>(41)98825-8499</p>
+                        </div>
+                    
+                        <h1>Selecione a forma de pagamento</h1>
+                        <div class="radio-pagamento">
+                            
+                            <input type="radio" id="method" name="method">
+                            <label for="method">Cartão de Crédito / Débito</label>
+                            <br>
+                            <input type="radio" id="method" name="method">
+                            <label for="method">Dinheiro</label>
+                        </div>
+                        <div class="info-cartao">
+                            <p>
+                                <input type="text" name="credit" placeholder="Número do cartão">
+                            </p>
+                            <p>
+                                <input type="date" name="expiration">
+                            </p>
+                            <p>
+                                <input type="text" name="id" placeholder="CVV">
+                            </p>
+                            <p>
+                                <input type="text" name="name" placeholder="Nome de posse do cartão">
+                            </p>
+                            <a href="#"><button class="btn-finalizar">Confirmar reserva</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="container-total">
+                <h1>Sua estadia</h1>
+                <hr>
+                <p>Valor total: R$ 560,00</p>        
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="envelope-areas">
+            <div class="area">
+                <p>Contato</p>
+                <ul>
+                    <li>Fone: 9999-9999</li>
+                    <li>Rua Pallace, Hotel 102</li>
+                </ul>
+            </div>
+            <div class="area">
+                <p>Metodos de pagamento</p>
+                <ul>
+                    <li>Dinheiro</li>
+                    <li>Pix</li>
+                    <li>Debito</li>
+                    <li>Crédito</li>
+                </ul>
+            </div>
+            <div class="area">
+                <p>Media social</p>
+                <ul>
+                    <li>Instagram</li></a>
+                    <li>Facebook</li></a>
+                    <li>Twiter</li></a>
+                </ul>
+            </div>
+        </div>
+    
+    </footer>
+</body>
+</html>
