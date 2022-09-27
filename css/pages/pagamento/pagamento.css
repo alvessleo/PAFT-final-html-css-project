@@ -496,6 +496,7 @@ footer .envelope-areas .area ul li:hover {
     width: 100%;
     max-width: 350px;
     max-height: 350px;
+    margin-top: 2em;
   }
 }
 @media only screen and (min-width: 1450px) {
