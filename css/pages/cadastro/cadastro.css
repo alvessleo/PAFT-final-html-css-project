@@ -88,4 +88,9 @@ body {
     margin: 0;
     margin-left: 5em;
   }
+}
+@media only screen and (min-width: 1450px) {
+  .cadastro-section .container-cadastro {
+    margin-left: 17em;
+  }
 }/*# sourceMappingURL=cadastro.css.map */
