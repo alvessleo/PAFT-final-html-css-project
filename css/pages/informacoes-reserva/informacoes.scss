@@ -142,7 +142,9 @@ header{
 }
 
 .quartos-section{
-    .container-main{
+    .container-grid{
+        display: grid;
+        grid-template-columns: 1fr;
         max-width: 100%;
         margin: 0 auto;
         padding-top: 30px;
@@ -233,149 +235,151 @@ header{
                     background-color: $color-primary;
                 }
             }
+            .container-total-info{
+                .envelope-quartos{
+                    h1{
+                        font-family: 'Playfair Display';
+                        font-weight: 400;
+                        font-size: 2em;
+                        text-align: left;
+                    }
+        
+                    h2{
+                        font-family: 'Playfair Display';
+                        font-weight: 400;
+                        font-size: 1.6em;
+                        text-align: left;
+                        margin-bottom: 1em;
+                        margin-top: 1em;
+                    }
+                    .quarto{
+                        display: flex;
+                        flex-direction: column;
+                        background-color: $color-primary;
+                        height: fit-content;
+                        margin-top: 1em;
+                        img{
+                            width: 100%;
+        
+                            object-fit: cover;
+                        }
+                        .info{
+                            padding: 20px;
+                            color: $color-white;
+                            h1{
+                                font-family: 'Playfair Display';
+                                font-weight: 400;
+                                font-size: 2.4em;
+                                text-align: left;
+                            }
+        
+            
+                            p{
+                                font-weight: 300;
+                                text-transform: uppercase;
+                                font-size: .7em;
+                                letter-spacing: 0.3em;
+                            }
+                        }
+                    }
+        
+                    form{
+                        p{
+                            input{
+                                border: none;
+                                border-bottom: 1px solid $color-black;
+                                width: 198px;
+                                padding-bottom: .5em;
+                                font-size: 1em;
+                                margin-bottom: 1em;
+        
+                                &[type="date"]{
+                                    background-color: $color-grey;
+                                    appearance: none;
+                                    -webkit-appearance: none;
+                                    color: $color-black;
+                                    font-family: "Poppins";
+                                    font-size: 15px;
+                                    border:1px solid #ecf0f1;
+                                    background:#ecf0f1;
+                                    padding: 4px 5px 4px 5px;
+                                    display: inline-block !important;
+                                    visibility: visible !important;
+                                    width: 185px;
+                                }
+                            }
+        
+                            select{
+                                background:#ecf0f1;
+                                width: 198px;
+                                padding: 2px 5px 2px 5px;
+                                font-size: 16px;
+                                line-height: 1;
+                                border: 0;
+                                border-radius: 0;
+                                height: 34px;
+                                -webkit-appearance: none;
+                            }
+                            
+                            &:last-child{
+                                margin-bottom: 3em;
+                            }
+        
+                            select{
+                                margin-bottom: 1em;
+                            }
+                        }
+                    }
+                }
+                
+            }
         }
 
         
     }
-    .container-total-info{
-        .envelope-quartos{
-            h1{
-                font-family: 'Playfair Display';
-                font-weight: 400;
-                font-size: 2em;
-                text-align: center;
-            }
 
-            h2{
-                font-family: 'Playfair Display';
-                font-weight: 400;
-                font-size: 1.6em;
-                text-align: left;
-                margin-bottom: 1em;
-                margin-top: 1em;
-            }
-            .quarto{
-                display: flex;
-                flex-direction: column;
-                background-color: $color-primary;
-                height: fit-content;
-                margin-top: 1em;
-                img{
-                    width: 100%;
+    .container-total{
+        background-color: $color-primary;
+        margin-top: 10px;
+        padding: 20px;
+        color: $color-white;
+        width: 100%;
+        max-width: 300px;
+        max-height: 350px;
+        h1{
+            font-family: 'Playfair Display';
+            font-size: 2.3em;
+            font-weight: 400;
+            padding-bottom: 7em;
 
-                    object-fit: cover;
-                }
-                .info{
-                    padding: 20px;
+        }
+        hr{
+            margin-bottom: 1em;
+        }
+
+        a{
+            margin: 0;
+            padding: 0;
+            .btn-finalizar{
+                background-color: $color-white;
+                border: 2px solid $color-primary;
+                color: $color-primary;
+                font-size: .8em;
+                padding: 7px 20px;
+                margin-top: 2em;
+                margin-left: -20px;
+                transition: color 0.5s;
+                transition: 0.5s;
+
+                &:hover{
+                    background-color: $color-primary;
+                    cursor: pointer;
                     color: $color-white;
-                    h1{
-                        font-family: 'Playfair Display';
-                        font-weight: 400;
-                        font-size: 2.4em;
-                        text-align: left;
-                    }
 
-    
-                    p{
-                        font-weight: 300;
-                        text-transform: uppercase;
-                        font-size: .7em;
-                        letter-spacing: 0.3em;
-                    }
-                }
-            }
-
-            form{
-                p{
-                    input{
-                        border: none;
-                        border-bottom: 1px solid $color-black;
-                        width: 198px;
-                        padding-bottom: .5em;
-                        font-size: 1em;
-                        margin-bottom: 1em;
-
-                        &[type="date"]{
-                            background-color: $color-grey;
-                            appearance: none;
-                            -webkit-appearance: none;
-                            color: $color-black;
-                            font-family: "Poppins";
-                            font-size: 15px;
-                            border:1px solid #ecf0f1;
-                            background:#ecf0f1;
-                            padding: 4px 5px 4px 5px;
-                            display: inline-block !important;
-                            visibility: visible !important;
-                            width: 185px;
-                        }
-                    }
-
-                    select{
-                        background:#ecf0f1; /* importante para exibir o novo ícone */
-                        width: 198px;
-                        padding: 2px 5px 2px 5px;
-                        font-size: 16px;
-                        line-height: 1;
-                        border: 0;
-                        border-radius: 0;
-                        height: 34px;
-                        -webkit-appearance: none;
-                    }
-                    
-                    &:last-child{
-                        margin-bottom: 3em;
-                    }
-
-                    select{
-                        margin-bottom: 1em;
-                    }
                 }
             }
         }
-        .container-total{
-            background-color: $color-primary;
-            margin-top: 10px;
-            padding: 20px;
-            color: $color-white;
-            width: 100%;
-            max-width: 300px;
-            max-height: 350px;
-            h1{
-                font-family: 'Playfair Display';
-                font-size: 2.3em;
-                font-weight: 400;
-                padding-bottom: 7em;
-    
-            }
-            hr{
-                margin-bottom: 1em;
-            }
-
-            a{
-                margin: 0;
-                padding: 0;
-                .btn-finalizar{
-                    background-color: $color-white;
-                    border: 2px solid $color-primary;
-                    color: $color-primary;
-                    font-size: 1em;
-                    padding: 7px 20px;
-                    margin-top: 2em;
-                    margin-left: -20px;
-                    transition: color 0.5s;
-                    transition: 0.5s;
-    
-                    &:hover{
-                        background-color: $color-primary;
-                        cursor: pointer;
-                        color: $color-white;
-    
-                    }
-                }
-            }
-            
-        }
+        
     }
     
 }
@@ -621,8 +625,10 @@ footer{
     .quartos-section{
         justify-content: center;
 
-        .container-main{
-            
+        .container-grid{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3em;
+            max-width: 920px;
             .processing{
                 padding-top: 20px;
                 .processing-bar{
@@ -632,25 +638,27 @@ footer{
                     }
                 }
             }
-            
-        }
-        .container-total-info{
-            flex-wrap: nowrap;
-            margin: 0 auto;
-            .envelope-quartos{
-                .quarto{
-                    img{
-                        width: 100%;
+            .container-total-info{
+                flex-wrap: nowrap;
+                margin: 0 auto;
+                .envelope-quartos{
+                    .quarto{
+                        img{
+                            width: 100%;
+                        }
                     }
+                    
                 }
                 
             }
-            .container-total{
-                margin-left: 20px;
-                width: 100%;
-                max-width: 350px;
-                max-height: 350px;
-            }
+            
+        }
+       
+        .container-total{
+            margin-left: 20px;
+            width: 100%;
+            max-width: 350px;
+            max-height: 350px;
         }
         
     }

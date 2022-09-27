@@ -116,19 +116,21 @@ header .menu {
   font-size: 2em;
 }
 
-.quartos-section .container-main {
+.quartos-section .container-grid {
+  display: grid;
+  grid-template-columns: 1fr;
   max-width: 100%;
   margin: 0 auto;
   padding-top: 30px;
 }
-.quartos-section .container-main .processing .processing-bar {
+.quartos-section .container-grid .processing .processing-bar {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 2em;
   margin-bottom: 2em;
 }
-.quartos-section .container-main .processing .processing-bar .first {
+.quartos-section .container-grid .processing .processing-bar .first {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,14 +143,14 @@ header .menu {
   color: rgb(255, 255, 255);
   position: relative;
 }
-.quartos-section .container-main .processing .processing-bar .first::after {
+.quartos-section .container-grid .processing .processing-bar .first::after {
   content: "Quartos";
   color: #000000;
   position: absolute;
   top: 0;
   transform: translateY(-25px);
 }
-.quartos-section .container-main .processing .processing-bar .second {
+.quartos-section .container-grid .processing .processing-bar .second {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,14 +163,14 @@ header .menu {
   color: rgb(255, 255, 255);
   position: relative;
 }
-.quartos-section .container-main .processing .processing-bar .second::after {
+.quartos-section .container-grid .processing .processing-bar .second::after {
   content: "Informações";
   color: #000000;
   position: absolute;
   top: 0;
   transform: translateY(-25px);
 }
-.quartos-section .container-main .processing .processing-bar .third {
+.quartos-section .container-grid .processing .processing-bar .third {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,28 +184,28 @@ header .menu {
   border: 2px solid #D9D9D9;
   position: relative;
 }
-.quartos-section .container-main .processing .processing-bar .third::after {
+.quartos-section .container-grid .processing .processing-bar .third::after {
   content: "Pagamento";
   color: #000000;
   position: absolute;
   top: 0;
   transform: translateY(-25px);
 }
-.quartos-section .container-main .processing .processing-bar .line {
+.quartos-section .container-grid .processing .processing-bar .line {
   height: 2px;
   width: 100px;
   background-color: #D9D9D9;
 }
-.quartos-section .container-main .processing .processing-bar .done {
+.quartos-section .container-grid .processing .processing-bar .done {
   background-color: #423836;
 }
-.quartos-section .container-total-info .envelope-quartos h1 {
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos h1 {
   font-family: "Playfair Display";
   font-weight: 400;
   font-size: 2em;
-  text-align: center;
+  text-align: left;
 }
-.quartos-section .container-total-info .envelope-quartos h2 {
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos h2 {
   font-family: "Playfair Display";
   font-weight: 400;
   font-size: 1.6em;
@@ -211,7 +213,7 @@ header .menu {
   margin-bottom: 1em;
   margin-top: 1em;
 }
-.quartos-section .container-total-info .envelope-quartos .quarto {
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos .quarto {
   display: flex;
   flex-direction: column;
   background-color: #423836;
@@ -220,28 +222,28 @@ header .menu {
   height: fit-content;
   margin-top: 1em;
 }
-.quartos-section .container-total-info .envelope-quartos .quarto img {
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos .quarto img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.quartos-section .container-total-info .envelope-quartos .quarto .info {
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos .quarto .info {
   padding: 20px;
   color: rgb(255, 255, 255);
 }
-.quartos-section .container-total-info .envelope-quartos .quarto .info h1 {
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos .quarto .info h1 {
   font-family: "Playfair Display";
   font-weight: 400;
   font-size: 2.4em;
   text-align: left;
 }
-.quartos-section .container-total-info .envelope-quartos .quarto .info p {
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos .quarto .info p {
   font-weight: 300;
   text-transform: uppercase;
   font-size: 0.7em;
   letter-spacing: 0.3em;
 }
-.quartos-section .container-total-info .envelope-quartos form p input {
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos form p input {
   border: none;
   border-bottom: 1px solid #000000;
   width: 198px;
@@ -249,7 +251,7 @@ header .menu {
   font-size: 1em;
   margin-bottom: 1em;
 }
-.quartos-section .container-total-info .envelope-quartos form p input[type=date] {
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos form p input[type=date] {
   background-color: #D9D9D9;
   -moz-appearance: none;
        appearance: none;
@@ -264,8 +266,8 @@ header .menu {
   visibility: visible !important;
   width: 185px;
 }
-.quartos-section .container-total-info .envelope-quartos form p select {
-  background: #ecf0f1; /* importante para exibir o novo ícone */
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos form p select {
+  background: #ecf0f1;
   width: 198px;
   padding: 2px 5px 2px 5px;
   font-size: 16px;
@@ -275,13 +277,13 @@ header .menu {
   height: 34px;
   -webkit-appearance: none;
 }
-.quartos-section .container-total-info .envelope-quartos form p:last-child {
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos form p:last-child {
   margin-bottom: 3em;
 }
-.quartos-section .container-total-info .envelope-quartos form p select {
+.quartos-section .container-grid .processing .container-total-info .envelope-quartos form p select {
   margin-bottom: 1em;
 }
-.quartos-section .container-total-info .container-total {
+.quartos-section .container-total {
   background-color: #423836;
   margin-top: 10px;
   padding: 20px;
@@ -290,31 +292,31 @@ header .menu {
   max-width: 300px;
   max-height: 350px;
 }
-.quartos-section .container-total-info .container-total h1 {
+.quartos-section .container-total h1 {
   font-family: "Playfair Display";
   font-size: 2.3em;
   font-weight: 400;
   padding-bottom: 7em;
 }
-.quartos-section .container-total-info .container-total hr {
+.quartos-section .container-total hr {
   margin-bottom: 1em;
 }
-.quartos-section .container-total-info .container-total a {
+.quartos-section .container-total a {
   margin: 0;
   padding: 0;
 }
-.quartos-section .container-total-info .container-total a .btn-finalizar {
+.quartos-section .container-total a .btn-finalizar {
   background-color: rgb(255, 255, 255);
   border: 2px solid #423836;
   color: #423836;
-  font-size: 1em;
+  font-size: 0.8em;
   padding: 7px 20px;
   margin-top: 2em;
   margin-left: -20px;
   transition: color 0.5s;
   transition: 0.5s;
 }
-.quartos-section .container-total-info .container-total a .btn-finalizar:hover {
+.quartos-section .container-total a .btn-finalizar:hover {
   background-color: #423836;
   cursor: pointer;
   color: rgb(255, 255, 255);
@@ -512,20 +514,25 @@ footer .envelope-areas .area ul li:hover {
   .quartos-section {
     justify-content: center;
   }
-  .quartos-section .container-main .processing {
+  .quartos-section .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+    max-width: 920px;
+  }
+  .quartos-section .container-grid .processing {
     padding-top: 20px;
   }
-  .quartos-section .container-main .processing .processing-bar .line {
+  .quartos-section .container-grid .processing .processing-bar .line {
     width: 170px;
   }
-  .quartos-section .container-total-info {
+  .quartos-section .container-grid .container-total-info {
     flex-wrap: nowrap;
     margin: 0 auto;
   }
-  .quartos-section .container-total-info .envelope-quartos .quarto img {
+  .quartos-section .container-grid .container-total-info .envelope-quartos .quarto img {
     width: 100%;
   }
-  .quartos-section .container-total-info .container-total {
+  .quartos-section .container-total {
     margin-left: 20px;
     width: 100%;
     max-width: 350px;

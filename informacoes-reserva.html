@@ -43,7 +43,7 @@
         </div>
     </section>
     <section class="quartos-section">
-        <div class="container-main">
+        <div class="container-grid">
             <div class="processing">
                 <div class="processing-bar">
                     <div class="first"><svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,69 +55,71 @@
                     <div class="line"></div>
                     <div class="third">3</div>
                 </div>
-            </div>
-
-        </div>
-        <div class="container-total-info">
-            <div class="envelope-quartos">
-                <h1>Quarto selecionado</h1>
-                <div class="quarto">
-                    <img src="img/section3img.jpg" alt="quarto">
-                    <div class="info">
-                        <p>Quarto 208</p>
-                        <h1>Suite Aquarium</h1>
+                <div class="container-total-info">
+                    <div class="envelope-quartos">
+                        <h1>Quarto selecionado</h1>
+                        <div class="quarto">
+                            <img src="img/section3img.jpg" alt="quarto">
+                            <div class="info">
+                                <p>Quarto 208</p>
+                                <h1>Suite Aquarium</h1>
+                            </div>
+                        </div>
+                        <form action="#">
+                            <p>
+                                <h2>Informações do quarto</h1>
+                            </p>
+                            <p>
+                                <label for="select">Confirme o quarto</label>
+                                <br>
+                                <select name="select" id="select">
+                                    <option value="quarto1">Quarto 208</option>
+                                    <option value="quarto2">Quarto 901</option>
+                                    <option value="quarto3">Quarto 503</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="checkin">Check-In</label>
+                                <br>
+                                <input type="date" name="checkin" id="checkin">
+                                <br>
+                                <label for="checkout">Check-Out</label>
+                                <br>
+                                <input type="date" name="checkout" id="checkout">
+                            </p>
+                            <p>
+                               <h2>Informações do Hóspede</h1> 
+                            </p>
+                            <p>
+                                <input type="text" name="nome" id="nome" placeholder="Nome">
+                            </p>
+                            <p>
+                                <input type="text" name="endereco" id="endereco" placeholder="Endereço">
+                            </p>
+                            <p>
+                                <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Nacionalidade">
+                            </p>
+                            <p>
+                                <input type="email" id="email" name="email" placeholder="Email">
+                            </p>
+                            <p>
+                                <input type="text" id="telefone" name="telefone" placeholder="Telefone">
+                            </p>
+                        </form>
                     </div>
+                    
                 </div>
-                <form action="#">
-                    <p>
-                        <h2>Informações do quarto</h1>
-                    </p>
-                    <p>
-                        <label for="select">Confirme o quarto</label>
-                        <br>
-                        <select name="select" id="select">
-                            <option value="quarto1">Quarto 208</option>
-                            <option value="quarto2">Quarto 901</option>
-                            <option value="quarto3">Quarto 503</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="checkin">Check-In</label>
-                        <br>
-                        <input type="date" name="checkin" id="checkin">
-                        <br>
-                        <label for="checkout">Check-Out</label>
-                        <br>
-                        <input type="date" name="checkout" id="checkout">
-                    </p>
-                    <p>
-                       <h2>Informações do Hóspede</h1> 
-                    </p>
-                    <p>
-                        <input type="text" name="nome" id="nome" placeholder="Nome">
-                    </p>
-                    <p>
-                        <input type="text" name="endereco" id="endereco" placeholder="Endereço">
-                    </p>
-                    <p>
-                        <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Nacionalidade">
-                    </p>
-                    <p>
-                        <input type="email" id="email" name="email" placeholder="Email">
-                    </p>
-                    <p>
-                        <input type="text" id="telefone" name="telefone" placeholder="Telefone">
-                    </p>
-                </form>
             </div>
             <div class="container-total">
                 <h1>Sua estadia</h1>
                 <hr>
                 <p>Valor total: R$ 560,00</p>
-                <a href="#"><button class="btn-finalizar">Finalizar Reserva</button></a>
+                <a href="pagamento.html"><button class="btn-finalizar">Finalizar Reserva</button></a>
                 
             </div>
         </div>
+
+       
         
     </section>
 
