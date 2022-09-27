@@ -248,12 +248,15 @@ header{
 
         .container-quartos{
             .envelope-quartos{
+                
                 .quarto{
                     display: flex;
                     flex-direction: column;
                     background-color: $color-primary;
                     height: fit-content;
-                    margin-top: 1em;
+                    margin-top: 1em;   
+                    
+                    
                     img{
                         width: 100%;
                         max-height: 200px;
@@ -262,12 +265,12 @@ header{
                     .info{
                         padding: 20px;
                         color: $color-white;
+                        
                         h1{
                             font-family: 'Playfair Display';
                             font-weight: 400;
                             font-size: 2.4em;
                         }
-
                         p{
                             font-weight: 300;
 

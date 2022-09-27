@@ -296,18 +296,22 @@ header .menu {
 .quartos-section .container-total-info .container-total hr {
   margin-bottom: 1em;
 }
-.quartos-section .container-total-info .container-total .btn-finalizar {
+.quartos-section .container-total-info .container-total a {
+  margin: 0;
+  padding: 0;
+}
+.quartos-section .container-total-info .container-total a .btn-finalizar {
   background-color: rgb(255, 255, 255);
   border: 2px solid #423836;
   color: #423836;
-  font-size: 1.3em;
+  font-size: 1em;
   padding: 7px 20px;
   margin-top: 2em;
-  margin-left: -1em;
+  margin-left: -20px;
   transition: color 0.5s;
   transition: 0.5s;
 }
-.quartos-section .container-total-info .container-total .btn-finalizar:hover {
+.quartos-section .container-total-info .container-total a .btn-finalizar:hover {
   background-color: #423836;
   cursor: pointer;
   color: rgb(255, 255, 255);

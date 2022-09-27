@@ -348,24 +348,29 @@ header{
                 margin-bottom: 1em;
             }
 
-            .btn-finalizar{
-                background-color: $color-white;
-                border: 2px solid $color-primary;
-                color: $color-primary;
-                font-size: 1.3em;
-                padding: 7px 20px;
-                margin-top: 2em;
-                margin-left: -1em;
-                transition: color 0.5s;
-                transition: 0.5s;
-
-                &:hover{
-                    background-color: $color-primary;
-                    cursor: pointer;
-                    color: $color-white;
-
+            a{
+                margin: 0;
+                padding: 0;
+                .btn-finalizar{
+                    background-color: $color-white;
+                    border: 2px solid $color-primary;
+                    color: $color-primary;
+                    font-size: 1em;
+                    padding: 7px 20px;
+                    margin-top: 2em;
+                    margin-left: -20px;
+                    transition: color 0.5s;
+                    transition: 0.5s;
+    
+                    &:hover{
+                        background-color: $color-primary;
+                        cursor: pointer;
+                        color: $color-white;
+    
+                    }
                 }
             }
+            
         }
     }
     
