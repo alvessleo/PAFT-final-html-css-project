@@ -117,8 +117,9 @@ header .menu {
 }
 
 .quartos-section .container-main {
-  max-width: 600px;
+  max-width: 100%;
   margin: 0 auto;
+  padding-top: 30px;
 }
 .quartos-section .container-main .processing .processing-bar {
   display: flex;
@@ -221,7 +222,6 @@ header .menu {
 }
 .quartos-section .container-total-info .envelope-quartos .quarto img {
   width: 100%;
-  max-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -286,6 +286,9 @@ header .menu {
   margin-top: 10px;
   padding: 20px;
   color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 300px;
+  max-height: 350px;
 }
 .quartos-section .container-total-info .container-total h1 {
   font-family: "Playfair Display";
@@ -358,6 +361,11 @@ footer .envelope-areas .area ul li:hover {
 }
 
 @media only screen and (min-width: 450px) {
+  .quartos-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .quartos-section .container-main .envelope-filters {
     flex-direction: row;
     justify-content: space-between;
@@ -366,9 +374,14 @@ footer .envelope-areas .area ul li:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 940px;
+    width: 100%;
   }
   .quartos-section .container-total-info .envelope-quartos .quarto {
-    max-width: 500px;
+    width: 100%;
+  }
+  .quartos-section .container-total-info .envelope-quartos .quarto img {
+    max-height: 200px;
   }
   .quartos-section .container-total-info .container-total {
     max-height: 350px;
@@ -392,6 +405,7 @@ footer .envelope-areas .area ul li:hover {
   .quartos-section .container-total-info .envelope-quartos {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .quartos-section .container-total-info .envelope-quartos h1 {
     text-align: left;
@@ -504,8 +518,12 @@ footer .envelope-areas .area ul li:hover {
   .quartos-section .container-main .processing .processing-bar .line {
     width: 170px;
   }
+  .quartos-section .container-total-info {
+    flex-wrap: nowrap;
+    margin: 0 auto;
+  }
   .quartos-section .container-total-info .envelope-quartos .quarto img {
-    width: 450px;
+    width: 100%;
   }
   .quartos-section .container-total-info .container-total {
     margin-left: 20px;

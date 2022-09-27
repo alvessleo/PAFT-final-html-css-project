@@ -143,8 +143,9 @@ header{
 
 .quartos-section{
     .container-main{
-        max-width: 600px;
+        max-width: 100%;
         margin: 0 auto;
+        padding-top: 30px;
         .processing{
             .processing-bar{
                 display: flex;
@@ -261,7 +262,7 @@ header{
                 margin-top: 1em;
                 img{
                     width: 100%;
-                    max-height: 200px;
+
                     object-fit: cover;
                 }
                 .info{
@@ -337,6 +338,9 @@ header{
             margin-top: 10px;
             padding: 20px;
             color: $color-white;
+            width: 100%;
+            max-width: 300px;
+            max-height: 350px;
             h1{
                 font-family: 'Playfair Display';
                 font-size: 2.3em;
@@ -429,7 +433,9 @@ footer{
 
 @media only screen and (min-width: 450px){
     .quartos-section{
-        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         .container-main{
             .envelope-filters{
                 flex-direction: row;
@@ -447,9 +453,14 @@ footer{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            max-width: 940px;
+            width: 100%;
             .envelope-quartos{
                 .quarto{
-                    max-width: 500px;
+                    width: 100%;
+                    img{
+                        max-height: 200px;
+                    }
                 }
             }
             .container-total{
@@ -481,6 +492,7 @@ footer{
             .envelope-quartos{
                 display: flex;
                 flex-direction: column;
+                width: 100%;
 
                 h1{
                     text-align: left;
@@ -628,10 +640,12 @@ footer{
             
         }
         .container-total-info{
+            flex-wrap: nowrap;
+            margin: 0 auto;
             .envelope-quartos{
                 .quarto{
                     img{
-                        width: 450px;
+                        width: 100%;
                     }
                 }
                 
