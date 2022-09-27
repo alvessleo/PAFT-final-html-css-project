@@ -202,6 +202,14 @@ header .menu {
   font-size: 2em;
   text-align: center;
 }
+.quartos-section .container-total-info .envelope-quartos h2 {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 1.6em;
+  text-align: left;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
 .quartos-section .container-total-info .envelope-quartos .quarto {
   display: flex;
   flex-direction: column;
@@ -236,6 +244,39 @@ header .menu {
 .quartos-section .container-total-info .envelope-quartos form p input {
   border: none;
   border-bottom: 1px solid #000000;
+  width: 198px;
+  padding-bottom: 0.5em;
+  font-size: 1em;
+  margin-top: 1em;
+}
+.quartos-section .container-total-info .envelope-quartos form p input[type=date] {
+  background-color: #D9D9D9;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  color: #000000;
+  font-family: "Poppins";
+  font-size: 15px;
+  border: 1px solid #ecf0f1;
+  background: #ecf0f1;
+  padding: 4px 5px 4px 5px;
+  display: inline-block !important;
+  visibility: visible !important;
+  width: 185px;
+}
+.quartos-section .container-total-info .envelope-quartos form p select {
+  background: #ecf0f1; /* importante para exibir o novo ícone */
+  width: 198px;
+  padding: 2px 5px 2px 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+}
+.quartos-section .container-total-info .envelope-quartos form p:last-child {
+  margin-bottom: 3em;
 }
 .quartos-section .container-total-info .container-total {
   background-color: #423836;
