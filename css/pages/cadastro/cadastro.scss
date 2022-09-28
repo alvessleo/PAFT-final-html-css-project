@@ -33,6 +33,7 @@ body{
         object-fit: cover;
         height: 100vh;
         display: none;
+        animation: introLoad 1s forwards;
     }
     .container-cadastro{
         font-family: 'Poppins';
@@ -132,5 +133,15 @@ body{
             margin-left: 17em;
         }
 
+    }
+}
+
+// Animacao
+
+@keyframes introLoad {
+    from{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }

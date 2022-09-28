@@ -26,6 +26,8 @@ body {
      object-fit: cover;
   height: 100vh;
   display: none;
+  -webkit-animation: introLoad 1s forwards;
+          animation: introLoad 1s forwards;
 }
 .login-section .container-login {
   font-family: "Poppins";
@@ -108,5 +110,25 @@ body {
 @media only screen and (min-width: 1450px) {
   .login-section .container-login {
     margin-right: 15em;
+  }
+}
+@-webkit-keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }/*# sourceMappingURL=login.css.map */
