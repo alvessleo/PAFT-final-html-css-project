@@ -443,27 +443,6 @@ footer{
 
             }
         }
-
-        .container-total-info{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 940px;
-            width: 100%;
-            .envelope-quartos{
-                .quarto{
-                    width: 100%;
-                    img{
-                        max-height: 200px;
-                    }
-                }
-            }
-            .container-total{
-                max-height: 350px;
-                margin-left: 20px;
-                margin-top: 3.6em;
-            }
-        }
     }
 }
 
@@ -493,12 +472,6 @@ footer{
                     text-align: left;
                 }
             }
-        }
-        .container-total{
-            margin-left: 20px;
-
-            max-height: 440px;
-            margin-top: 2em;
         }
     }
 

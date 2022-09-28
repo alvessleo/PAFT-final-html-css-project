@@ -361,24 +361,6 @@ footer .envelope-areas .area ul li:hover {
     flex-direction: row;
     justify-content: space-between;
   }
-  .quartos-section .container-total-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 940px;
-    width: 100%;
-  }
-  .quartos-section .container-total-info .envelope-quartos .quarto {
-    width: 100%;
-  }
-  .quartos-section .container-total-info .envelope-quartos .quarto img {
-    max-height: 200px;
-  }
-  .quartos-section .container-total-info .container-total {
-    max-height: 350px;
-    margin-left: 20px;
-    margin-top: 3.6em;
-  }
 }
 @media only screen and (min-width: 680px) {
   body {
@@ -400,11 +382,6 @@ footer .envelope-areas .area ul li:hover {
   }
   .quartos-section .container-total-info .envelope-quartos h1 {
     text-align: left;
-  }
-  .quartos-section .container-total {
-    margin-left: 20px;
-    max-height: 440px;
-    margin-top: 2em;
   }
   footer {
     margin: 4em 0em -1.5em -1.5em;

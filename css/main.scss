@@ -138,6 +138,7 @@ header{
 
             &:hover{
                 cursor: pointer;
+                background-color: #757575;
             }
 
 
@@ -145,6 +146,9 @@ header{
                 background-color: $color-primary;
                 color: $color-white;
                 text-transform: uppercase;
+                &:hover{
+                    background-color: #241e1d;
+                }
             }
 
             .day-month{
